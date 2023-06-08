@@ -1,0 +1,19 @@
+{
+  "name": "mini-project",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "bigantilla",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "fetch-node": "^0.0.1",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0",
+    "node-fetch": "^3.3.1"
+  }
+}

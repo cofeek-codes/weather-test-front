@@ -27,8 +27,10 @@ window.addEventListener("load", () => {
   let long;
   let lat;
   // запрос геолокации. если отклонено, то поиск по городу вручную
+  console.log(navigator.geolocation);
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition((position) => {
+      console.log(position);
       // по геолокации получаю широту и долготу для определения данных
       long = position.coords.longitude;
       lat = position.coords.latitude;

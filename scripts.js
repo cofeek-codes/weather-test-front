@@ -39,7 +39,10 @@ window.addEventListener("load", () => {
       // фетч для получения данных
       fetch(geo_URL)
         .then((r) => r.text())
-        .then((d) => constructData(d));
+        .then((d) => {
+          console.log(d);
+          constructData(d);
+        });
     });
   } else {
     //если на момент отказа уже введён город, будет осуществлён поиск по нему
